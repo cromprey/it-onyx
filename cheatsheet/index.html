@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a comment -->
+
+<head>
+  <title>Thomas Wallace</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Keyword rich description of the site's purpose">
+  <meta name="author" content="Thomas Wallace">
+</head>
+
+<body>
+  <main>
+    <h1>HTML5 Reference Document</h1>
+    <section id="text-based-semantics">
+      <h2 class="section-heading">Text Based Sematics</h2>
+      <div class="output">
+      <p><em>Lorem Ipsum</em> is simply dummy text of the <strong>printing and typesetting industry</strong>. Lorem Ipsum has been the industry's standard <del>dummy text</del> ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of <sub>Lorem</sub><sup>Ipsum</sup>.
+      </p>
+      <address>
+        501 North Filmore<br />Little Rock, AR, 72205
+      </address>
+      </div>
+      <div class="input"></div>
+    </section>
+    <section id="images">
+      <h2 class="section-heading">Images</h2>
+      <div class="output">
+      <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UALR Logo">
+      </div>
+      <div class="input">
+        <pre>
+          <code></code>
+        </pre>
+      </div>
+    </section>
+    <section id="headings">
+      <h2 class="section-heading">Headings</h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+    <section id="lists">
+      <h2 class="section-heading">Types of Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ol>
+      <h3>Definition List</h3>
+      <dl>
+        <dt>Definition Term</dt>
+        <dd>Definition Description</dd>
+        <dd>Definition Description</dd>
+        <dd>Definition Description</dd>
+        <dt>Definition Term</dt>
+        <dd>Definition Description</dd>
+        <dd>Definition Description</dd>
+        <dt>Definition Term</dt>
+        <dd>Definition Description</dd>
+      </dl>
+    </section>
+    <section id="hyperlinks">
+      <h2 class="section-header">Hyperlinks</h2>
+      <ul>
+        <li><a href="https://ualr.edu" target="_blank" title="This is a verbose description of absolute link">Absolute Link</a></li>
+        <li><a href="resources/pages/about.html" target="_blank">Relative Link</a></li>
+        <li><a href="#top">Anchor Links</a></li>
+        <li><a href="mailto:email@address.com">Email Link</a></li>
+      </ul>
+    </section>
+    <section id="tables">
+      <h2 class="section-header">Tables</h2>
+      <table border="1">
+        <caption>Groceries</caption>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Cost</th>
+        </tr>
+        <tr>
+          <td>Cheetos</td>
+          <td>12</td>
+          <td>.99</td>
+        </tr>
+        <tr>
+          <td>Cheetos</td>
+          <td>12</td>
+          <td>.99</td>
+        </tr>
+        <tr>
+          <td>Cheetos</td>
+          <td>12</td>
+          <td>.99</td>
+        </tr>
+      </table>
+    </section>
+    <section id="quotes">
+      <h2 class="section-header">Quotes</h2>
+      <h3>Blockquote</h3>
+      <blockquote>If you can't explain it simply, you don't understand it well enough. <cite>Albert Einstein</cite>
+      </blockquote>
+      <h3>Inline Quote</h3>
+      <p><q>Honey tastes good</q> said Pooh.</p>
+      </table>
+    </section>
+    <section id="forms">
+      <h2 class="section-heading">Forms</h2>
+      <form action="processing-script.php" method="get">
+        <fieldset>
+          <legend>Sample Form Fields</legend>
+          <label for="first-name">First Name</label>
+          <input type="input" id="first-name" name="first-name" required>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments"></textarea>
+          <label for="fav-car">Favorite Car Maker</label>
+          <select id="fav-car" name="fav-car">
+            <option value="F">Ford</option>
+            <option value="C">Chevy</option>
+            <option value="D">Dodge</option>
+            <option value="null" selected>---</option>
+          </select>
+          <input type="submit" value="Send">
+          <fieldset>
+            <legend>Select a maintenance drone:</legend>
+
+            <div>
+              <input type="radio" id="huey" name="drone" value="huey" checked>
+              <label for="huey">Huey</label>
+            </div>
+
+            <div>
+              <input type="radio" id="dewey" name="drone" value="dewey">
+              <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+              <input type="radio" id="louie" name="drone" value="louie">
+              <label for="louie">Louie</label>
+            </div>
+          </fieldset>
+
+        </fieldset>
+      </form>
+    </section>
+    <section id="structural-elements">
+      <h2 class="section-heading">Structural Elements</h2>
+      <code>&lt;main&gt;</code><br>
+      <code>&lt;header&gt;</code><br>
+      <code>&lt;footer&gt;</code><br>
+      <code>&lt;nav&gt;</code><br>
+      <code>&lt;section&gt;</code><br>
+      <code>&lt;article&gt;</code><br>
+      <code>&lt;aside&gt;</code><br>
+      <code>&lt;figure&gt;</code><br>
+      <code>&lt;figcaption&gt;</code>
+    </section>
+    <footer>&copy; 2022 Thomas Wallace</footer>
+  </main>
+</body>
+
+</html>
