@@ -1,3 +1,18 @@
+/* Color Theme Swatches in Hex */
+.Website-theme-1-hex { color: #283444; }
+.Website-theme-2-hex { color: #C9DAF0; }
+.Website-theme-3-hex { color: #798BA3; }
+.Website-theme-4-hex { color: #57492F; }
+.Website-theme-5-hex { color: #A39479; }
+
+
 body{
-    background-color: plum;
+    background-color: #C9DAF0;
+    font-family: 'Open Sans', sans-serif;
 }
+
+main{
+    background-color: #FFFFFF;
+}
+
+
