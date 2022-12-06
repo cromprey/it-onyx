@@ -1,0 +1,3 @@
+<script>
+      $( "#PatientForm" ).validate({ });
+</script>
