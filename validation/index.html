@@ -30,8 +30,8 @@
         <label for="email" class="formlabel">Email:</label>
         <input type="email" id="email" name="Email" size="30" maxlength="30"
         data-rule-required="true" data-msg-required="Email Required"
-        data-rule-email="true" data-msg-email="Invalid Email"><br>
-        <label for="email" class="error"></label>
+        data-rule-email="true" data-msg-email="Invalid Email">
+        <label for="email" class="error"></label><br>
 
 
         <label class="formlabel">Sex:</label>
@@ -175,6 +175,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 
+    <script>
+        $( "#PatientForm" ).validate({ 
 
+        });
+    </script>
+  
 </body>
 </html>
