@@ -90,11 +90,11 @@
 
         <label for="city" class="formlabel">City</label>
         <input type="text" id="city" name="City" size="30" maxlength="30"
-        data-rule-required="true" data-msg-required="required"> 
+        data-rule-required="true" data-msg-required="Required"> 
     
         <label for="state" class="formlabel">State</label>
-        <select id="state" name="State" size="3"
-        data-rule-required="true" data-msg-required="required">
+        <select id="state" name="State"
+        data-rule-required="true" data-msg-required="Required">
             <option value="">Select a State...</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -151,8 +151,9 @@
 
         <label for="zipcode" class="formlabel">Zip:</label>
         <input type="text" id="zipcode" name="Zip" size="5" maxlength="5"
-        data-rule-required="true" data-msg-required="zip code required"
-        data-rule-number="true" data-msg-number="number">
+        data-rule-digits="true" data-rule-required="true" 
+        data-msg-required="ZipCode required" data-rule-number="true" 
+        data-msg-number="Must be Numbers">
         <label for="zipcode" class="error"></label>
 
         <hr>
