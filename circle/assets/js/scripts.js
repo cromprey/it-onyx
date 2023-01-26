@@ -68,9 +68,9 @@ function displayCircle() {
 
   function clearForm()
 {
-    document.getElementById("leg1").value = "";
-    document.getElementById("leg1error").innerHTML = "";
-    document.getElementById("leg2").value = "";
-    document.getElementById("leg2error").innerHTML = "";
-    document.getElementById("hypotenuse").innerHTML = "";
+    document.getElementById("radius").value = "";
+    document.getElementById("radiuserror").innerHTML = "";
+    document.getElementById("diameter").innerHTML = "";
+    document.getElementById("circumference").innerHTML = "";
+    document.getElementById("area").innerHTML = "";
 }
