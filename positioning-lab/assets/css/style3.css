@@ -25,18 +25,37 @@ body {
 }
 #navy {
   background-color: #001f3f;
+  width: 175px;
+  height: 150px;
+  float: left;
+  margin: 20px 20px;
 }
 #teal {
   background-color: #39CCCC;
+  width: 175px;
+  height: 150px;
+  margin: 20px 0;
+  float: left;
 }
 #blue {
   background-color: #0074D9;
+  width: 175px;
+  height: 150px;
+  margin: 20px 20px;
+  float: left;
 }
 #aqua {
   background-color: #7FDBFF;
+  width: 175px;
+  height: 150px;
+  margin: 20px 0;
+  float: left;
 }
 #footer {
   background-color: #666;
+  width: 760px;
+  margin: 20px;
+  clear: both;
 }
 h1 {
   color: #000;
