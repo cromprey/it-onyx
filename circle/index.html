@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculations of a Circle</title>
+    <meta charset ="utf-8"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form id="CircleForm" onsubmit="return false">
+    <h2>Calculations of a Circle</h2>
+        <label for="radius" class="formlabel">Enter radius for our circle:</label>
+        <input type="text" id="radius" name="radius"
+               data-rule-required="true"  data-msg-required="Radius is Required" 
+               data-rule-number="true" data-msg-number="Radius must be floating point number"
+               data-rule-min="0" data-msg-min="Radius must be greater than zero">
+        <label for="radius" class="error" id="radiuserror"></label>
+        <br>
+    
+        <br><br>
+
+        <label for="diameter" class="formlabel">Diameter:</label>
+        <span id="diameter"></span>
+        <br><br>
+        <label for="circumference" class="formlabel">Circumference:</label>
+        <span id="circumference"></span>
+        <br><br>
+        <label for="area" class="formlabel">Area:</label>
+        <span id="area"></span>
+        <br><br>
+        <input type="submit" value="Calculate" id="btnCalc" onclick="displayCircle()">
+        <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
+    </form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<script src="assets/js/scripts.js" rel="javascript file"></script>
+</html>
