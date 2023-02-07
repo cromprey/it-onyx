@@ -1,0 +1,60 @@
+/* ---------------Box Sizing----------------- */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #ECECEC;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #FFF;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  #wrapper {
+    background-color: #FFF;
+    border: 1px solid #c0c0c0;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: 2px 2px #000;
+    display: grid;
+    grid-template-rows: 150px 20px;
+    grid-template-columns: 175px 175px 175px 175px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  #navy {
+    background-color: #001f3f;
+  }
+
+  #teal {
+    background-color: #39CCCC;
+  }
+
+  #blue {
+    background-color: #0074D9;
+  }
+
+  #aqua {
+    background-color: #7FDBFF;
+  }
+
+  #footer {
+    background-color: #666;
+    width: 760px;
+  }
+
+  h1 {
+    color: #000;
+    font-weight: normal;
+    padding: 50px;
+  }
