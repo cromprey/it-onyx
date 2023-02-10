@@ -2,7 +2,7 @@ function calculate(){
     "use strict";
 
 // Get a reference to the form - Use the ID of the form
-var form = $( "#myform" );
+var form = $( "#myForm" );
 
 
 // If all of the form elements are valid, get the form values
@@ -14,26 +14,26 @@ if (form.valid()) {
     //fromUnit
     // Get the value associated with the operator that was checked (cm, m, km, in, ft, yds, mi)
     var fromUnit;
-    if( document.getElementById("centimeters").checked) {
-        fromUnit = document.getElementById("centimeters").value;
+    if( document.getElementById("cm").checked) {
+        fromUnit = document.getElementById("cm").value;
     }
-    if( document.getElementById("meters").checked) {
-        fromUnit = document.getElementById("meters").value;
+    if( document.getElementById("m").checked) {
+        fromUnit = document.getElementById("m").value;
     }
-    if( document.getElementById("kilometers").checked) {
-        fromUnit = document.getElementById("kilometers").value;
+    if( document.getElementById("km").checked) {
+        fromUnit = document.getElementById("km").value;
     }
-    if( document.getElementById("inches").checked) {
-        fromUnit = document.getElementById("inches").value;
+    if( document.getElementById("in").checked) {
+        fromUnit = document.getElementById("in").value;
     }
-    if( document.getElementById("feet").checked) {
-        fromUnit = document.getElementById("feet").value;
+    if( document.getElementById("ft").checked) {
+        fromUnit = document.getElementById("ft").value;
     }
-    if( document.getElementById("yards").checked) {
-        fromUnit = document.getElementById("yards").value;
+    if( document.getElementById("yds").checked) {
+        fromUnit = document.getElementById("yds").value;
     }
-    if( document.getElementById("miles").checked) {
-        fromUnit = document.getElementById("centimeters").value;
+    if( document.getElementById("mi").checked) {
+        fromUnit = document.getElementById("mi").value;
     }
 
     //toUnit
@@ -69,7 +69,7 @@ async function calculateResult(fromValue, fromUnit, toUnit) {
     var myURL = "http://brucebauer.info/assets/ITEC3650/gethint.php";
 
     //AJAX operator requires fromValue, fromUnit, toUnit
-    myURL = myURL + "?fromValue" + encodeURIComponent(fromValue) + "&fromUnit=" + encodeURIComponent (fromUnit) + "&toUnit=" + encodeURIComponent(toUnit);
+    myURL = myURL + "?fromValue=" + encodeURIComponent(fromValue) + "&fromUnit=" + encodeURIComponent (fromUnit) + "&toUnit=" + encodeURIComponent(toUnit);
 
     //fetch the results
     let myCalcObject = await fetch(myURL);
@@ -84,6 +84,13 @@ function clearform() {
     /* Set all of the form values to blank or false */
     document.getElementById("fromValue").value = "";
     document.getElementById("fromValueError").innerHTML = "";
+    document.getElementById("cm").checked = false;
+    document.getElementById("m").checked = false;
+    document.getElementById("km").checked = false;
+    document.getElementById("in").checked = false;
+    document.getElementById("ft").checked = false;
+    document.getElementById("yds").checked = false;
+    document.getElementById("mi").checked = false;
     document.getElementById("centimeters").checked = false;
     document.getElementById("meters").checked = false;
     document.getElementById("kilometers").checked = false;
@@ -91,10 +98,7 @@ function clearform() {
     document.getElementById("feet").checked = false;
     document.getElementById("yards").checked = false;
     document.getElementById("miles").checked = false;
-    document.getElementById("OperatorMsg").innerHTML = "";
-    document.getElementById("Operand2").value = "";
-    document.getElementById("Operand2Msg").innerHTML = "";
-    document.getElementById("Result").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
 }
 
 $( "#myform" ).validate({
