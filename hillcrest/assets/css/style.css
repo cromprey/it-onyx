@@ -1,0 +1,16 @@
+/*-------Color theme--------
+
+Teal #16baba
+white #FFFFFF
+black #000000
+*/
+
+/*------Box Sizing------*/
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
