@@ -10,6 +10,33 @@ black #000000
 	padding: 0;
 } 
 
+/*-----IMGs---------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  padding: 5px; 
+}
+
+.img-left {
+   float: left;
+   margin: 10px 20px 10px 0;
+   padding: 5px;
+}
+
+.img-center{
+   display:block;
+   margin: 20px auto;
+   padding: 5px;
+}
+
+
+
 /*------Box Sizing------*/
 html {
   box-sizing: border-box;
@@ -39,7 +66,6 @@ main {
 /*-----Header-------*/
 
 header.primary{
-  background-color: rgb(0,0,0,0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -48,24 +74,22 @@ header.primary{
 }
 
 header h1 a{
-  background-color: goldenrod;
   text-decoration: none;
-  color: black;
+  color: #16baba;
   font-size: 50px;
 }
 
 .head-left{
-  background-color:aquamarine;
+  display:grid;
+  grid-template-rows: 60% 40%;
 }
 
 header h2{
   color: black;
   font-size: 40px;
-  background-color: lightcyan;
 }
 
 nav ul{
-  background-color: yellow;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -74,20 +98,57 @@ nav ul{
   height: 100%;
   text-align: right;
   list-style-type: none;
-  padding:
 }
 
 nav ul li{
   display: inline;
   line-height: 105px;
-  padding: 10px;
+  font-weight: bold;
 }
 
 nav ul li a{
   text-decoration: none;
-  color: black;
-  font-size: 25px;
-  border: 1pt solid black;
+  font-size: 28px;
   border-radius: 5px;
   padding: 20px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover{
+  background-color: #16baba;
+  opacity: 0.5;
+  color: white;
+}
+
+#content.home{
+  margin: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 15px;
+}
+
+.introduction {
+  padding: 10px;
+}
+
+.introduction h2{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.introduction p{
+  padding:5px;
+  text-indent: 8px;
+}
+
+.intro-img{
+  border: 3pt #16baba solid;
+  border-radius: 5px;
 }
