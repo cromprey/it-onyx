@@ -5,12 +5,67 @@ white #FFFFFF
 black #000000
 */
 
+* {
+	margin: 0;
+	padding: 0;
+} 
+
 /*------Box Sizing------*/
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*-------- Body and Main -------*/
+
+body{
+  background-image: url(../img/white-texture.png);
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+main {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  padding: 20px;
+}
+
+/*-----Header-------*/
+
+header.primary{
+  background-color: rgb(0,0,0,0.4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.head-right{
+  background-color: red;
+  justify-content: center;
+
+}
+
+header h1 a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  text-align: right;
+  list-style-type: none;
+}
+
+nav ul a{
+  text-decoration: none;
 }
