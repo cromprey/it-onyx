@@ -42,30 +42,52 @@ header.primary{
   background-color: rgb(0,0,0,0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.head-right{
-  background-color: red;
-  justify-content: center;
-
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2pt solid black;
 }
 
 header h1 a{
+  background-color: goldenrod;
   text-decoration: none;
   color: black;
+  font-size: 50px;
+}
+
+.head-left{
+  background-color:aquamarine;
+}
+
+header h2{
+  color: black;
+  font-size: 40px;
+  background-color: lightcyan;
 }
 
 nav ul{
+  background-color: yellow;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100%;
   text-align: right;
   list-style-type: none;
+  padding:
 }
 
-nav ul a{
+nav ul li{
+  display: inline;
+  line-height: 105px;
+  padding: 10px;
+}
+
+nav ul li a{
   text-decoration: none;
+  color: black;
+  font-size: 25px;
+  border: 1pt solid black;
+  border-radius: 5px;
+  padding: 20px;
 }
