@@ -1,4 +1,4 @@
-function calculate(){
+function calculate1() {
     "use strict";
 
 // Get a reference to the form - Use the ID of the form
