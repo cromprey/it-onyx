@@ -14,14 +14,14 @@
 
 <body>
 <form id="myForm">
-    <div class="formcontainer" onsumbit="returnfalse">
+    <div class="formcontainer" onsubmit="returnfalse">
     <h1>Unit Converter</h1>
     <fieldset id="detail">
         <legend>Converter (Using AJAX)</legend>
         <br>
 
         <label class="formlabel" for="fromValue">From Value:</label>
-        <input type="text" id="fromValue" name="fromValue" size="15" length="15"
+        <input type="text" id="fromValue" name="fromValue" size="15" maxlength="15"
             data-rule-reqired="true" data-msg-required="Must enter From Value.">
             <label for="fromValue" class="error" id="fromValueError"></label>
         <br><br>
@@ -82,7 +82,7 @@
         <span id="result"></span>
         <br><br>
 
-        <input type="button" value="calculate" name="calculate" onclick="calculate();">
+        <input type="button" value="calculate" name="calculate" onclick="calculate1();">
             <input type="button" value="clear" name="clear" onclick="clearform();">
 
     </fieldset>

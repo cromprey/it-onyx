@@ -9,7 +9,7 @@ var form = $( "#myForm" );
 if (form.valid()) {
     
     //fromValue
-    var fromValue = document.getElementByID("fromValue").value;
+    var fromValue = document.getElementById("fromValue").value;
 
     //fromUnit
     // Get the value associated with the operator that was checked (cm, m, km, in, ft, yds, mi)
@@ -66,16 +66,16 @@ if (form.valid()) {
 
 async function calculateResult(fromValue, fromUnit, toUnit) {
     //URL method and AJAX Call
-    var myURL = "http://brucebauer.info/assets/ITEC3650/gethint.php";
+    var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
 
     //AJAX operator requires fromValue, fromUnit, toUnit
-    myURL = myURL + "?fromValue=" + encodeURIComponent(fromValue) + "&fromUnit=" + encodeURIComponent (fromUnit) + "&toUnit=" + encodeURIComponent(toUnit);
+    myURL = myURL + "?FromValue=" + encodeURIComponent(fromValue) + "&FromUnit=" + encodeURIComponent (fromUnit) + "&ToUnit=" + encodeURIComponent(toUnit);
 
     //fetch the results
     let myCalcObject = await fetch(myURL);
     let myResult = await myCalcObject.text();
 
-    document.getElementById("Result").innerHTML = myResult;
+    document.getElementById("result").innerHTML = myResult;
 }
 
 function clearform() {
