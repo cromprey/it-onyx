@@ -17,21 +17,21 @@
             <label for="BaseCurrency">Base Currency:</label>
             <select id="BaseCurrency">
                 <option>Select Currency...</option>
-                <option label="US Dollar">AEDUSD</option>
-                <option label="Austrailan Dollar">ARSAUD</option>
-                <option label="Mexican Peso">ARSMXN</option>
-                <option label="Pakistan Rupee">AEDPKR</option>
-                <option label="Japanese Yen">AEDJPY</option>
+                <option value="USD">US Dollar</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="MXN">Mexican Peso</option>
+                <option value="PKR">Pakistan Rupee</option>
+                <option value="JPY">Japanese Yen</option>
             </select>
             <br><br>
             <label for="ConvertCurrency">Convert to Currency:</label>
-            <select id="ConvertCurrency>">
+            <select id="ConvertCurrency">
                 <option>Convert To...</option>
-                <option label="US Dollar">AEDUSA</option>
-                <option label="Australian Dollar">ARSAUD</option>
-                <option label="Mexican Peso">ARSMXN</option>
-                <option label="Paksitan Rupee">AEDPKR</option>
-                <option label="Japenese Yen">AEDJPY</option>
+                <option value="USD">US Dollar</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="MXN">Mexican Peso</option>
+                <option value="PKR">Pakistan Rupee</option>
+                <option value="JPY">Japanese Yen</option>
             </select>
             <br><br>
             <label class="formlabel">From Date:</label>
@@ -44,27 +44,12 @@
 			     data-rule-required="true" data-msg-required="To Date is Required">
 		    <label id="ToDateError" for="ToDate" class="error"></label>
             <br><br>
-            <input type="button" value="ShowResults" id="ShowResults" name="ShowResults" onclick="ShowResutls();">
+            <input type="button" value="ShowResults" id="ShowResults" name="ShowResults" onclick="ShowResultsX();">
             <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
             <hr>
-        
-            
-            <div class="clearfix">
-                <div class="img-container">
-                    <span id="StockValueTable"></span>
-                </div>
-                <div class="img-container">
-                    <span id="StockVolumeTable"></span>
-                </div>
-            </div>
-            <hr>
-            
             <div class="clearfix">
                 <div class="img-container">
                     <canvas id="chartjs-0" width="400" height="400"></canvas>
-                </div>
-                <div class="img-container">
-                    <canvas id="chartjs-1" width="400" height="400"></canvas>
                 </div>
             </div>
         </div>
@@ -73,6 +58,6 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
