@@ -16,39 +16,35 @@
             <h2>Currency Value History</h2>
             <label for="BaseCurrency">Base Currency:</label>
             <select id="BaseCurrency">
-                <option>Select Base...</option>
+                <option>Select Currency...</option>
                 <option label="US Dollar">AEDUSD</option>
                 <option label="Austrailan Dollar">ARSAUD</option>
                 <option label="Mexican Peso">ARSMXN</option>
                 <option label="Pakistan Rupee">AEDPKR</option>
                 <option label="Japanese Yen">AEDJPY</option>
             </select>
-
+            <br><br>
             <label for="ConvertCurrency">Convert to Currency:</label>
             <select id="ConvertCurrency>">
                 <option>Convert To...</option>
+                <option label="US Dollar">AEDUSA</option>
+                <option label="Australian Dollar">ARSAUD</option>
+                <option label="Mexican Peso">ARSMXN</option>
+                <option label="Paksitan Rupee">AEDPKR</option>
+                <option label="Japenese Yen">AEDJPY</option>
             </select>
-
-
-
-
-
-
-            <label for="StockSymbol" class="formlabel" >Enter Symbol: </label>
-            <!--<label for="DisplayStock" class="formlabel" ></label>-->
-            <input type="text" id="StockSymbol" name="StockSymbol" size="6" maxlength="6"
-                    data-rule-required="true"  data-msg-required="Value is Required">
-            <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
+            <br><br>
             <label class="formlabel">From Date:</label>
             <input type="date" name="FromDate" id="FromDate" 
                 data-rule-required="true" data-msg-required="From Date is Required">
             <label id="FromDateError" for="FromDate" class="error"></label>
+            <br><br>
             <label class="formlabel">To Date:</label>
             <input type="date" name="ToDate" id="ToDate" 
 			     data-rule-required="true" data-msg-required="To Date is Required">
 		    <label id="ToDateError" for="ToDate" class="error"></label>
             <br><br>
-            <input type="button" value="DisplayStock" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
+            <input type="button" value="ShowResults" id="ShowResults" name="ShowResults" onclick="ShowResutls();">
             <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
             <hr>
             <br>

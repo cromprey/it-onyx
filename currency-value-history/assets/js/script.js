@@ -1,4 +1,4 @@
-async function GetStock() {
+async function ShowResults() {
     "use strict";
 
     // Get a reference to the form - Use the ID of the form
