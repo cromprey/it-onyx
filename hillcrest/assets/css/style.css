@@ -36,7 +36,6 @@ img {
 }
 
 
-
 /*------Box Sizing------*/
 html {
   box-sizing: border-box;
@@ -60,7 +59,6 @@ main {
   margin-right: auto;
   margin-left: auto;
   text-align: left;
-  padding: 20px;
 }
 
 /*-----Header-------*/
@@ -151,4 +149,9 @@ nav ul li a:hover{
 .intro-img{
   border: 3pt #16baba solid;
   border-radius: 5px;
+}
+
+
+footer{
+  background-color: #16baba;
 }
