@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Mars Rover Photos Explorer, Instructor Bruce Bauer">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Caitlin Romprey">
+    <title>Mars Rover Photo Explorer</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form id="myform">
+        <h2>Mars Rover Photo Explorer</h2>
+        <div class="table">
+            <table border="1">
+                <th>Rover</th> <th>Mission Start</th> <th>Mission End</th>
+                <tr>
+                    <td>Curiosity</td>
+                    <td>08/06/2012</td>
+                    <td>09/29/2019</td>
+                </tr>
+                <tr>
+                    <td>Opportunity</td>
+                    <td>01/26/2004</td>
+                    <td>06/11/2018</td>
+                </tr>
+                <tr>
+                    <td>Spirit</td>
+                    <td>01/05/2004</td>
+                    <td>03/21/2004</td>
+                </tr>
+            </table>
+        <br>
+        </div>
+        <h3>Select a Rover and Picture Date:</h3>
+        <div class="formcontainer">
+            <label class="formlabel">Rover: </label>
+                <label for="curiosityRover">
+                    <input type="radio" name="roverChoice" id="curiosity" value="curiosity">Curiosity
+                    <!--data-rule-required="true" data-msg-required="Must select Unit."-->
+                </label>
+                <label for="opportunityRover">
+                    <input type="radio" name="roverChoice" id="opportunity" value="opportunity">Opportunity   
+                </label>
+                <label for="spiritRover">
+                    <input type="radio" name="roverChoice" id="spirit" value="spirit">Spirit   
+                </label>
+                <br><br>
+            <label class="formlabel">Pick a Date:</label>
+            <input type="date" id="start" name="trip-start" value="2018-07-22"
+                min="2004-01-05" max="2019-09-29">
+            <br><br>
+            <label class="formlabel">Result:</label>
+            <span id="result"></span>
+            <br><br>
+    
+            <input type="button" value="result" name="result" onclick="calculate1();">
+                <input type="button" value="clear" name="clear" onclick="clearform();">
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
