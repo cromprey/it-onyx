@@ -1,0 +1,158 @@
+/*-------Color theme--------
+
+Teal #16baba
+white #FFFFFF
+black #000000
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+} 
+
+/*-----IMGs---------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  padding: 5px; 
+}
+
+.img-left {
+   float: left;
+   margin: 10px 20px 10px 0;
+   padding: 5px;
+}
+
+.img-center{
+   display:block;
+   margin: 20px auto;
+   padding: 5px;
+}
+
+/*------Box Sizing------*/
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+  
+/*-------- Body and Nav -------*/
+  
+
+body{
+  background-image: url(../img/paper-texture.png);
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+header.primary{
+  background-color: #16baba;
+  width: 100%;
+  padding: 25px;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 50px;
+}
+
+header h2{
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100%;
+  text-align: right;
+  align-items: center;
+  list-style-type: none;
+}
+
+#logo{
+  height: 120px;
+  width: 120px;
+  margin: 10px 0 0 0;
+  border: none;
+}
+
+nav ul li{
+  display: inline;
+  font-weight: bold;
+  padding: 8px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li:hover{
+  border-bottom: 2pt solid #FFF;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+
+/*--------- Home Page --------*/
+
+section#content {
+    padding: 5em 7em;
+}
+
+section#content h3{
+    font-size: 2.2em;
+    color:#000;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+
+section#content p{
+    padding: 10px 0;
+}
+
+
+section#articles {
+    background-color: #000;
+    padding: 4em 6em;
+}
+
+section#articles .article-container {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #16baba;
+    padding: 20px;
+} 
+
+section#articles h2,
+#content h2 {
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 20px;
+    flex: 0 0 100%;
+    color: #16baba;
+    text-align: center;
+    font-size: 2.5em;
+} 
