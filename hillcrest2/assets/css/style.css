@@ -57,7 +57,8 @@ body{
 header.primary{
   background-color: #16baba;
   width: 100%;
-  padding: 25px;
+  padding: 30px 30px 10px 30px;
+
 }
 
 header h1 a{
@@ -81,6 +82,7 @@ nav ul{
   text-align: right;
   align-items: center;
   list-style-type: none;
+  margin: 15px 0;
 }
 
 #logo{
@@ -109,6 +111,7 @@ nav ul li a:link, nav ul li a:visited {
 
 nav ul li:hover{
   border-bottom: 2pt solid #FFF;
+  border-top: 2pt solid #FFF;
   border-radius: 10px;
   background-color: rgba(255,255,255, 0.3);
 }
@@ -131,7 +134,6 @@ section#content p{
     padding: 10px 0;
 }
 
-
 section#articles {
     background-color: #000;
     padding: 4em 6em;
@@ -141,18 +143,96 @@ section#articles .article-container {
     color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 1px solid #16baba;
     padding: 20px;
+
 } 
 
 section#articles h2,
 #content h2 {
-    border-bottom: 1px solid #c0c0c0;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     flex: 0 0 100%;
     color: #16baba;
     text-align: center;
     font-size: 2.5em;
 } 
+
+section#articles h3{
+  text-align: center;
+  flex: 0 0 100%;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 20px;
+  margin: 0 0 25px 0;
+}
+
+#articles article.post {
+  width: 45%;
+  border: 1px solid #fff;
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8em;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#articles article.post h3 {
+  font-size: 26px;
+}
+
+#articles figure img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#articles figure .earth{
+ width: 76%;
+ display: block;
+ margin: 0 auto;
+
+}
+
+#articles li{
+  padding: 5px 20px;
+  list-style-position: inside;
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+    font-size: 1em;
+    text-align: right;
+    color: #808080;
+    text-transform:lowercase
+}
+
+#articles p{
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+.endcontainer{
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+.container#pullquote{
+  padding: 25px;
+}
+
+.container#pullquote p{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: #16baba;
+}
+
+#colophon h6{
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px 0;
+  color: #16baba;
+}
