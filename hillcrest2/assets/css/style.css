@@ -252,3 +252,22 @@ section#articles h3{
 #articles article.color-post img{
   border: solid white 0.8pt;
 }
+
+/*--------- VOICE PAGE ----------*/
+
+.voice-main h2{
+  color: black;
+}
+
+.voice-main p {
+  font-size: 1.1em;
+}
+
+.voice-main ul{
+  margin: 0 15px;
+}
+
+.voice-main li{
+  padding: 10px;
+  list-style-position: inside;
+}
