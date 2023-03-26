@@ -58,7 +58,6 @@ header.primary{
   background-color: #16baba;
   width: 100%;
   padding: 30px 30px 10px 30px;
-
 }
 
 header h1 a{
@@ -255,10 +254,6 @@ section#articles h3{
 
 /*--------- VOICE PAGE ----------*/
 
-.voice-main h2{
-  color: black;
-}
-
 .voice-main p {
   font-size: 1.1em;
 }
@@ -270,4 +265,90 @@ section#articles h3{
 .voice-main li{
   padding: 10px;
   list-style-position: inside;
+}
+
+section#content .voice-main h2{
+  color: black;
+  text-align: left;
+  font-size: 2.2em;
+}
+
+
+/*------- TYPOGRAPHY PAGE --------*/
+
+section.wrapper{
+  display: grid;
+  background: grey;
+  grid-template-columns: 800px 800px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ""
+}
+
+section#content .type-intro{
+  grid-area: intro;
+  background: blue
+}
+
+section#content .type-examples{
+  padding: 20px;
+  background: yellow;
+  grid-area: image;
+}
+
+section#content .type-examples img{
+  background: greenyellow;
+}
+
+section#content .type-examples ol{
+  padding: 10px 20px;
+  background: pink;
+}
+
+section#content .type-examples li{
+  padding: 5px;
+}
+
+section.slideshow{
+  grid-area: slideshow;
+  background: purple;
+}
+
+
+/*------- TYPOGRAPHY SLIDESHOW --------*/
+
+.slideshow{
+  width:37vw;
+  /* Set Max Content Width */
+  max-width:700px;
+  height: 280px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: red;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+  color:blue ;
+}
+
+.card{
+  height: 280px;
+  display: grid;
+  padding: 2rem;
+  border:2px solid #c0c0c0;
 }

@@ -6,6 +6,8 @@
   <meta charset="UTF-8" />
   <meta name="description" content="Not affilated with HLB, just a personal project." />
   <meta name="author" content="Caitlin Romprey" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -25,42 +27,57 @@
       </ul>
     </nav>
   </header>
-  <section id="content" class="container">
-    <div class="type-intro">
-    <h3>Typography</h3>
-    <p>Using a consistent, recognizable typography helps our customers identify our brand as we share our baked goods
-      across the country. By following the standards, we are ensuring clear, impactful messaging for our customer base no
-      matter where they may find themselves on our website, social media, or in our flagship bakery.
-    </p>
-  </div>
-  <div class="type-content">
-    <h4>Helvetica</h4>
-    <p>Helvetica is our most notable font. The neutrality and the impact it makes is what Hillcrest is about.</p>
-  </div>
-  <div class="type-usage">
-    <h5>Primary Headline</h5>
-    <p>This is used to capture the attention of our customers.</p>
-    <p id="type-primary"><strong>HELVETICA NEUE FONT SIZE 20 ALL CAPS BOLD</strong><br>
-      <strong>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</strong></p>
-    <h5>Secondary Headline</h5>
-    <p id="type-secondary"><strong>HELVETICA NEUE FONT SIZE 14 ALL CAPS BOLD (PRINT)</strong><br>
-      <strong>HELVETICA NEUE FONT SIZE 12 ALL CAPS BOLD (WEB)</strong><br>
-      <strong>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</strong>
-    </p>
-    <h5>Body Content</h5>
-    <p id="type-body">
-      Helvetica NEUE Font Size 12 Proper Case Unbold<br>
-      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-    </p>
-  </div>
-  <div class="type-examples">
-    <img src="assets/img/type-example.png">
-    <ol>
-      <li>Primary Headline</li>
-      <li>Secondary Headline</li>
-      <li>Body Content</li>
-    </ol>
-  </div>
+  <section class="wrapper">
+    <section id="content" class="container">
+      <div class="type-intro">
+        <h3>Typography</h3>
+        <p>Using a consistent, recognizable typography helps our customers identify our brand as we share our baked goods
+          across the country. By following the standards, we are ensuring clear, impactful messaging for our customer base no
+          matter where they may find themselves on our website, social media, or in our flagship bakery.
+        </p>
+      </div>
+      <div class="type-examples">
+        <img src="assets/img/type-example.png">
+        <ol>
+          <li>Primary Headline</li>
+          <li>Secondary Headline</li>
+          <li>Body Content</li>
+        </ol>
+      </div>
+    </section>
+    <section class="fade slideshow">
+      <article>
+        <div class="card">
+          <div class="content">
+            <h2>Primary Headline</h2>
+            <p>This is used to capture the attention of our customers.</p>
+            <p><strong>HELVETICA NEUE FONT SIZE 20 ALL CAPS BOLD</strong></p>
+            <p><strong>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</strong></p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="card">
+          <div class="content">
+            <h2>Secondary Headline</h2>
+            <p>This is used to help our customers with navigation.</p>
+            <p><strong>HELVETICA NEUE FONT SIZE 14 ALL CAPS BOLD (PRINT)</strong></p>
+            <p><strong>HELVETICA NEUE FONT SIZE 12 ALL CAPS BOLD (WEB)</strong></p>
+            <p><strong>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</strong></p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="card">
+          <div class="content">
+            <h2>Body Content</h2>
+            <p>This is used to to deliver detailed and/or supplemental information to our customers.</p>
+            <p>Helvetica NEUE Font Size 12 Proper Case Unbold</p>
+            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+          </div>
+        </div>
+      </article>
+    </section>
   </section>
   <section id="pullquote" class="container">
     <p>Jumpstart your day with Hillcrest Little Bakery.</p>
@@ -68,6 +85,12 @@
   <footer id="colophon" role="contentinfo">
     <h6>&copy; 2022 Caitlin Romprey | <a href="mailto:cromprey@ualr.edu"> Report a problem</a>
   </footer>
+
+  <!-- Add before closing body tag before local JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
