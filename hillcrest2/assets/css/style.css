@@ -276,51 +276,27 @@ section#content .voice-main h2{
 
 /*------- TYPOGRAPHY PAGE --------*/
 
-section.wrapper{
-  display: grid;
-  background: grey;
-  grid-template-columns: 800px 800px;
-  grid-template-rows: auto;
-  grid-template-areas:
-  ""
+.type-intro p{
+  font-size: 1.1em;
 }
 
-section#content .type-intro{
-  grid-area: intro;
-  background: blue
+.type-intro img{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0 0 0;
 }
 
-section#content .type-examples{
-  padding: 20px;
-  background: yellow;
-  grid-area: image;
-}
 
-section#content .type-examples img{
-  background: greenyellow;
-}
-
-section#content .type-examples ol{
-  padding: 10px 20px;
-  background: pink;
-}
-
-section#content .type-examples li{
-  padding: 5px;
-}
-
-section.slideshow{
-  grid-area: slideshow;
-  background: purple;
-}
 
 
 /*------- TYPOGRAPHY SLIDESHOW --------*/
 
 .slideshow{
-  width:37vw;
+  margin: auto;
+  width: 59vw;
   /* Set Max Content Width */
-  max-width:700px;
+  max-width:750px;
   height: 280px;
 }
 
@@ -330,7 +306,7 @@ section.slideshow{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: red;
+  color: #16baba;
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
@@ -338,12 +314,11 @@ section.slideshow{
 .slick-next:focus .slick-next-icon,
 .slick-next:focus .slick-prev-icon,
 .slick-prev:focus .slick-next-icon,
-.slick-prev:focus .slick-prev-icon,
 .slick-dots li button:focus .slick-dot-icon:before,
 .slick-dots li.slick-active button:focus .slick-dot-icon,
 .slick-autoplay-toggle-button:focus 
 {
-  color:blue ;
+  color: black ;
 }
 
 .card{
@@ -351,4 +326,13 @@ section.slideshow{
   display: grid;
   padding: 2rem;
   border:2px solid #c0c0c0;
+}
+
+.card-content p{
+  padding: 5px 0;
+}
+
+#headline{
+  font-family: "Helvetica-Neue", Helvetica, sans-serif;
+  font-size: 26px;
 }
