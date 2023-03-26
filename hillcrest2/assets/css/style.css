@@ -120,6 +120,8 @@ nav ul li:hover{
 
 section#content {
     padding: 5em 7em;
+    display: flex;
+    flex-direction: column;
 }
 
 section#content h3{
@@ -345,4 +347,22 @@ section#content .voice-main h2{
 #b-headline{
   font-family: "Helvetica-Neue", Helvetica, sans-serif;
   font-size: 16px;
+}
+
+/*------- LOGO PAGE ----------*/
+
+.primary-logo{
+  background: #16baba;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2pt solid #000;
+  margin-bottom: 100px;
+  width: 700px;
+}
+
+.alt-logo{
+  background: #16baba;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2pt solid #000;
 }
