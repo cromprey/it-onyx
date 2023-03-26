@@ -294,9 +294,9 @@ section#content .voice-main h2{
 
 .slideshow{
   margin: auto;
-  width: 59vw;
+  
   /* Set Max Content Width */
-  max-width:750px;
+  max-width: 720px;
   height: 280px;
 }
 
@@ -332,7 +332,12 @@ section#content .voice-main h2{
   padding: 5px 0;
 }
 
-#headline{
+#p-headline{
   font-family: "Helvetica-Neue", Helvetica, sans-serif;
   font-size: 26px;
+}
+
+#s-headline{
+  font-family: "Helvetica-Neue", Helvetica, sans-serif;
+  font-size: 
 }
