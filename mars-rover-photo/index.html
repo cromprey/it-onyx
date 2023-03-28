@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
@@ -8,7 +7,7 @@
     <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
     <meta name="author" content="Caitlin Romprey">
     <title>Mars Rover Photo Explorer</title>
-    <link href="style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <form id="myform">
@@ -49,21 +48,53 @@
                 </label>
                 <br><br>
             <label class="formlabel">Picture Date:</label>
-            <input type="date" id="start" name="trip-start" value="2018-07-22"
-                min="2004-01-05" max="2019-09-29">
+            <input type="date" id="pictureDate" name="pictureDate" value="2018-07-22"
+                data-rule-required="true" data-msg-required="Picture Date is Required.">
+            <label id="pictureDateError" for="picturedate" class="error"></label>
+
             <br><br>
             <label class="formlabel">Result:</label>
             <span id="result"></span>
             <br><br>
     
-            <input type="button" value="result" name="result" onclick="calculate1();">
-                <input type="button" value="clear" name="clear" onclick="clearform();">
+            <input type="button" value="Result" name="result" onclick="showPhotos();">
+            <input type="button" value="Clear" name="clear" onclick="clearform();">
+            <span id="numberofphotos"></span>
+
+            <hr>
+            <img src="" id="image0" title="">
+            <img src="" id="image1" title="">
+            <img src="" id="image2" title="">
+            <img src="" id="image3" title="">
+            <img src="" id="image4" title="">
+            <img src="" id="image5" title="">
+            <img src="" id="image6" title="">
+            <img src="" id="image7" title="">
+            <img src="" id="image8" title="">
+            <img src="" id="image9" title="">
+            <img src="" id="image10" title="">
+            <img src="" id="image11" title="">
+            <img src="" id="image12" title="">
+            <img src="" id="image13" title="">
+            <img src="" id="image14" title="">
+            <img src="" id="image15" title="">
+            <img src="" id="image16" title="">
+            <img src="" id="image17" title="">
+            <img src="" id="image18" title="">
+            <img src="" id="image19" title="">
+            <img src="" id="image20" title="">
+            <img src="" id="image21" title="">
+            <img src="" id="image22" title="">
+            <img src="" id="image23" title="">
+            <img src="" id="image24" title="">
+            <img src="" id="image25" title="">
+
         </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
