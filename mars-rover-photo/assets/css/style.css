@@ -1,0 +1,56 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+.error{
+    color: red;
+    padding-left: 5px;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    border-collapse: collapse;
+    border: 1pt solid black;
+}
+
+th, td{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.photo-gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-gallery::after{
+    content: "";
+    width: 350px;
+}
+
+img[src="none"]{
+    display: none;
+}
